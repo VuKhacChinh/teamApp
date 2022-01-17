@@ -1,0 +1,624 @@
+body {
+    background-color: #e1e1e1;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_content {
+    text-align: center;
+    padding: 5px;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+}
+
+#header a:visited {
+    color: white;
+}
+
+
+/*css header */
+
+#header {
+    background-color: #003399;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#listheader {
+    list-style-type: none;
+}
+
+#listheader li {
+    display: inline-block;
+    padding: 0;
+    margin: 15px;
+    width: 22%;
+    text-align: left;
+}
+
+.fa-home,
+.fa-sign-in-alt {
+    color: #FF0000;
+    font-size: 150%;
+    padding-right: 10px;
+}
+
+
+/* css trang đăng nhập */
+
+.dangnhap {
+    background-color: #fff;
+    width: 40%;
+    margin: auto;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+#dangnhap {
+    margin-top: 100px;
+}
+
+#dangnhap legend {
+    color: blue;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#dangnhap input {
+    height: 30px;
+    display: block;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+#dangnhap button {
+    border-radius: 4px;
+    background-color: #FFFF00;
+    margin: 10px;
+    padding: 5px;
+}
+
+#dangnhap a {
+    text-decoration: none;
+}
+
+#dangnhap a:visited {
+    color: blue;
+}
+
+#dangnhap a:hover {
+    color: red;
+}
+
+#userfun {
+    position: relative;
+}
+
+#listfunctionuser {
+    display: none;
+    position: absolute;
+    background-color: #210099;
+    z-index:1;
+}
+
+#userfun:hover #listfunctionuser {
+    display: block;
+}
+
+#listfunctionuser li {
+    width: 100%;
+    margin: 0;
+}
+
+#listfunctionuser a {
+    padding: 10px;
+}
+
+#userfun a {
+    display: block;
+    height: 100%;
+}
+
+#listfunctionuser a:hover {
+    background-color: #FFD700;
+}
+
+
+/* css cột trái */
+
+.left {
+    height: 91vh;
+    width: 72px;
+    background-color: #003399;
+    position: fixed;
+}
+
+.left div {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.left a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.left a:hover {
+    background-color: slateblue;
+    text-decoration: none;
+    color: white;
+}
+
+.left label {
+    font-size: 80%;
+}
+
+
+/* css cột trái 2 */
+
+.left2 {
+    height: 91vh;
+    width: 200px;
+    background-color: #cdcdcd;
+    position: fixed;
+    left: 72px;
+}
+
+.left2 div {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.left2 a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 61px;
+    text-decoration: none;
+    color:#003399 ;
+}
+
+.left2 a:hover {
+    background-color: white;
+    text-decoration: none;
+    color: #003399;
+}
+
+.left2 label {
+    font-size: 80%;
+}
+
+
+/* css content */
+
+.content {
+    margin-top: 73px;
+}
+
+
+/*css tìm kiếm và tạo nhóm */
+
+#search_create {
+    display: flex;
+    flex-direction: row;
+    height: 39px;
+    margin-top: 10px;
+}
+
+#button_create {
+    position: fixed;
+    left: 150px;
+}
+
+#button_create button {
+    padding: 10px;
+    background-color: darkorange;
+}
+
+#search_group {
+    background-color: #fff;
+    border: 2px solid rebeccapurple;
+    position: fixed;
+    right: 200px;
+}
+
+#search_group input {
+    border: 0 none;
+    padding: 10px;
+}
+
+#search_group button {
+    border: 0 none;
+    padding: 10px;
+    background-color: turquoise;
+}
+
+.group{
+    width: 200px;
+    height: 200px;
+    color:#0000CD;
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.group:hover{
+    text-decoration: none;
+    background-color: #7bbaee;
+}
+
+/* css trang danh sách nhóm */
+
+body {
+    background-image: url("mt.jpg");
+}
+
+#create_group_fun {
+    position: fixed;
+}
+
+#create_group {
+    display: none;
+    width: 200px;
+    height: 150px;
+    background-color: #B0E0E6;
+    text-align: center;
+}
+
+#create_group input {
+    padding: 5px;
+    height: 20%;
+}
+
+#create_group button {
+    margin: 5px;
+    padding: 5px;
+    width: 40%;
+    background-color: greenyellow;
+    color: #0000CD;
+}
+
+#create_group input[type="button"] {
+    margin: 5px;
+    padding: 5px;
+    width: 40%;
+    background-color: red;
+    color: #fff;
+}
+
+.list_group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.nhomdexuat ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nhomdexuat li {
+    padding: 5px;
+}
+
+
+/* css trang đăng bài */
+
+#create_post_input {
+    display: none;
+    position: fixed;
+    text-align: center;
+    padding: 20px;
+    height: 50vh;
+    width: 60%;
+    margin: auto;
+    border: 1px solid hotpink;
+    background-color: #787878;
+}
+
+#create_post_input button,
+input[type='button'] {
+    width: 70px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    background-color: chartreuse;
+}
+
+#create_post_input textarea {
+    width: 70%;
+}
+
+#area_create {
+    height: 30vh;
+}
+
+.btnpost_function {
+    float: right;
+    background-color: white;
+    border: 0px none;
+}
+
+.avata img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+}
+
+
+/* css chỉnh sửa bài viết */
+
+.new_post_input {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    text-align: center;
+    padding: 20px;
+    height: 50vh;
+    width: 60%;
+    border: 1px solid hotpink;
+    background-color: #787878;
+}
+
+.new_post_input button,
+input[type='button'] {
+    width: 70px;
+    border: 1px solid blueviolet;
+    background-color: chartreuse;
+}
+
+.new_post_input textarea {
+    width: 70%;
+}
+
+.area_edit {
+    height: 30vh;
+}
+
+#create_post {
+    border: 1px none;
+    border-radius: 6px;
+    background-color: #fff;
+    display: block;
+    width: 90%;
+    text-align: left;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+.posting {
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 40px;
+}
+
+.posting_user {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.infor_postuser {
+    display: flex;
+    flex-direction: column;
+}
+
+.post_time,
+.user_email {
+    color: blue;
+}
+
+.function {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    height: 40px;
+    background-color: #DCDCDC;
+}
+
+.function li {
+    text-align: center;
+    width: 50%;
+}
+
+.function ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.function button {
+    border: 1px none;
+    width: 100%;
+    height: 100%;
+    background-color: #DCDCDC;
+}
+
+.main_content_post {
+    min-height: 200px;
+}
+
+.comment_user {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.more_comment {
+    margin-left: 30px;
+    color: blue;
+    background-color: white;
+    border: 0 none;
+}
+
+.comment_content {
+    background-color: #DCDCDC;
+    border-radius: 16px;
+    display: block;
+    max-width: 200px;
+    padding: 5px;
+}
+
+.comment_time {
+    font-size: 70%;
+    color: blue;
+}
+
+.rep_comment_user {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+.rep_comment {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.more_rep_comment {
+    margin-left: 60px;
+    color: blue;
+    background-color: white;
+    border: 0 none;
+}
+
+.rep_comment_content {
+    background-color: #DCDCDC;
+    border-radius: 16px;
+    padding: 5px;
+}
+
+.rep_comment_time {
+    font-size: 70%;
+    color: blue;
+}
+
+.more_post {
+    margin: 10px auto;
+    display: block;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: rgb(207, 20, 45);
+    border: 0 none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+.post_function {
+    display: none;
+}
+
+
+/* css trang danh sách thành viên */
+
+#addmember {
+    background-color: #fff;
+    border: 2px solid rebeccapurple;
+    position: fixed;
+    left: 280px;
+    margin: 5px;
+}
+
+#addmember input {
+    border: 0 none;
+    padding: 5px;
+    margin-right: -5px;
+}
+
+#addmember button {
+    border: 0 none;
+    padding: 5px;
+    background-color: turquoise;
+}
+
+#joinning_request {
+    background-color: turquoise;
+    border: 2px solid rebeccapurple;
+    position: fixed;
+    right: 140px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#joinning_request a {
+    display: block;
+    text-decoration: none;
+    color: #FF3300;
+}
+
+#joinning_request a:hover {
+    color: #E0FFFF;
+}
+
+.manager_function {
+    margin-top: 10px;
+}
+
+.expel_refuse {
+    background-color: red;
+    color: wheat;
+    border-radius: 10px;
+}
+
+.approval {
+    background-color: greenyellow;
+    color: purple;
+    border-radius: 6px;
+}
+
+
+/* Css video */
+
+[v-cloak] {
+    display: none;
+}
+
+.header-highlight {
+    color: #ff4954;
+}
+
+.info {
+    padding: 1.5rem;
+}
+
+.meeting_content_ {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid blue;
+}
+
+.meeting_function {
+    text-align: center;
+    margin-top: 20px;
+}
